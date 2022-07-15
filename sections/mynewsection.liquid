@@ -1,25 +1,43 @@
-<div>
-    <p>some text</p>
-    {%for block in section.blocks%}
-        <div style="color: {{block.settings.color}}; width: 50px; height: 50px"></div>
-    {%endfor%}
-</div>
+<div>{{ section.settings.asd }}</div>
+<div>{{ section.settings.asdritchText }}</div>
+{% for block in section.blocks %}
+  <img src="{{ block.settings.image | img_url:  'grande'}}"/>  
+{% endfor %}
 
 {%schema%}
     {
-        "name": "mynewsection",
+        "name": "mysection",
         "settings": [
             {
                 "type": "text",
-                "id": "section_text",
-                "label": "use your mind"
+                "label": "use your mind",
+                "id": "asd",
+                "default": "haha"
+            },
+            {
+              "type": "richtext",
+              "label": "another thing you can change",
+              "id": "asdritchText"
             }
         ],
         "blocks": [
-            {
-                "type": "color",
-                "name": "color picker"
-            }
+          {
+            "type": "image",
+            "name": "image block",
+            "settings": [
+              {
+                "type": "image_picker",
+                "label": "your image",
+                "id": "image"
+              }
+            ]
+          }
+        ],
+        "presets": [
+          {
+            "category": "images",
+            "name": "icons with text"
+          }
         ]
         
     }
