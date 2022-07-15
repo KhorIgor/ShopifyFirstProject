@@ -212,13 +212,18 @@
       document.documentElement.classList.add('shopify-design-mode');
     }
     </script>
+    {{ 'mystyle.css' | asset_url | stylesheet_tag }}
+    <script src="{{ 'myjs.js' | asset_url }}" defer></script>
+    <script>
+    
+    </script>
   </head>
 
   <body class="gradient">
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ "accessibility.skip_to_text" | t }}
     </a>
-
+    
     {%- if settings.cart_type == 'drawer' -%}
       {%- render 'cart-drawer' -%}
     {%- endif -%}
@@ -230,7 +235,7 @@
     </main>
 
     {% section 'footer' %}
-
+    {% section 'mynewsection'%}
     <ul hidden>
       <li id="a11y-refresh-page-message">{{ 'accessibility.refresh_page' | t }}</li>
       <li id="a11y-new-window-message">{{ 'accessibility.link_messages.new_window' | t }}</li>
