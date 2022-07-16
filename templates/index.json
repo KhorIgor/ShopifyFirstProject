@@ -47,6 +47,20 @@
         "show_text_below": false
       }
     },
+    "mynewsection": {
+      "type": "mynewsection",
+      "settings": {
+        "sectionText": "",
+        "asd": "",
+        "asdrichText": "",
+        "productId": "",
+        "pageId": "",
+        "prlistId": [
+
+        ],
+        "urlId": ""
+      }
+    },
     "rich_text": {
       "type": "rich-text",
       "blocks": {
@@ -69,6 +83,8 @@
         "text"
       ],
       "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
         "color_scheme": "background-1",
         "full_width": true,
         "padding_top": 40,
@@ -80,15 +96,22 @@
       "settings": {
         "title": "Featured products",
         "heading_size": "h2",
-        "collection": "all",
-        "products_to_show": 8,
-        "columns_desktop": 4,
+        "description": "<p>Best UPS seilings<\/p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "frontpage",
+        "products_to_show": 4,
+        "columns_desktop": 2,
+        "full_width": false,
         "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
         "color_scheme": "background-1",
         "image_ratio": "adapt",
         "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false,
+        "enable_quick_add": false,
         "columns_mobile": "2",
         "swipe_on_mobile": false,
         "padding_top": 28,
@@ -101,13 +124,13 @@
         "collection-0": {
           "type": "collection",
           "settings": {
-            "collection": ""
+            "collection": "processors"
           }
         },
         "product": {
           "type": "product",
           "settings": {
-            "product": "",
+            "product": "процессор-amd-ryzen-5-5600x-s-am4-3-7ghz-32mb-box-100-100000065box",
             "second_image": false
           }
         },
@@ -188,20 +211,15 @@
         "image_width": "third",
         "image_ratio": "adapt",
         "columns_desktop": 3,
-        "column_alignment": "center",
+        "column_alignment": "left",
         "background_style": "none",
         "button_label": "",
         "button_link": "",
         "color_scheme": "background-1",
-        "columns_mobile": "1",
+        "columns_mobile": "2",
         "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
-      }
-    },
-    "mynewsection": {
-      "type": "mynewsection",
-      "settings": {
       }
     }
   },
